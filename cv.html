@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Curriculum vitae of Maxime Delpech.">
+  <title>CV — Maxime Delpech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">MD<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">About</a>
+      <a class="active" href="cv.html">CV</a>
+      <a href="research.html">Research</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <p class="eyebrow">CURRICULUM VITAE</p>
+      <h1>Education, experience, and selected projects.</h1>
+      <p class="lead narrow">
+        A concise overview of my academic background and machine learning work.
+      </p>
+      <a class="button primary" href="assets/maxime-delpech-cv.pdf" target="_blank">
+        Download PDF CV
+      </a>
+      <p class="small-note">Add your PDF in <code>assets/maxime-delpech-cv.pdf</code>.</p>
+    </section>
+
+    <section class="cv-section">
+      <p class="section-label">EDUCATION</p>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-date">2026 — 2027</div>
+          <div>
+            <h2>Master MVA — Mathematics, Vision, Learning</h2>
+            <p class="muted">ENS Paris-Saclay · Incoming student</p>
+            <p>
+              Advanced coursework in machine learning, deep learning,
+              probabilistic modeling, optimization, and sequential learning.
+            </p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">2025 — 2026</div>
+          <div>
+            <h2>Master 1 — Applied Mathematics</h2>
+            <p class="muted">Université Paris 1 Panthéon-Sorbonne</p>
+            <p>Ranked 8th out of 37 students.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">Earlier</div>
+          <div>
+            <h2>Mathematics and Computer Science</h2>
+            <p class="muted">Université Paris Cité</p>
+            <p>Interdisciplinary training in mathematics, algorithms, and programming.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <p class="section-label">EXPERIENCE</p>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-date">2026</div>
+          <div>
+            <h2>Machine Learning Engineer Intern</h2>
+            <p class="muted">Elior Group · Paris</p>
+            <p>
+              Built forecasting and data-quality pipelines for large-scale
+              food-service demand. Worked on dish-level prediction, menu
+              representation, feature engineering, and evaluation.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <p class="section-label">SELECTED PROJECTS</p>
+      <div class="project-list">
+        <article>
+          <h2>Dish Forecasting with DeepSets</h2>
+          <p>
+            Permutation-invariant neural network for predicting dish choice
+            rates from complete menu compositions.
+          </p>
+        </article>
+        <article>
+          <h2>Restaurant Demand Forecasting</h2>
+          <p>
+            Time-series forecasting pipeline with site-level evaluation,
+            calendar features, lag variables, and WAPE-based monitoring.
+          </p>
+        </article>
+        <article>
+          <h2>Food Label Taxonomy and Matching</h2>
+          <p>
+            NLP pipeline for cleaning, grouping, and classifying thousands of
+            noisy food labels into culinary families.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <p class="section-label">SKILLS</p>
+      <div class="skill-grid">
+        <div>
+          <h3>Machine Learning</h3>
+          <p>PyTorch, scikit-learn, forecasting, neural networks, model evaluation</p>
+        </div>
+        <div>
+          <h3>Programming</h3>
+          <p>Python, pandas, NumPy, Git, SQL, Jupyter</p>
+        </div>
+        <div>
+          <h3>Research Interests</h3>
+          <p>Deep learning, reinforcement learning, time series, set-based models</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Maxime Delpech</p>
+    <p>Built for GitHub Pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

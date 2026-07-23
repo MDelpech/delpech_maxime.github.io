@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Research projects and interests of Maxime Delpech.">
+  <title>Research — Maxime Delpech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">MD<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">About</a>
+      <a href="cv.html">CV</a>
+      <a class="active" href="research.html">Research</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <p class="eyebrow">RESEARCH</p>
+      <h1>Learning from structured, sequential, and real-world data.</h1>
+      <p class="lead narrow">
+        My current work lies at the intersection of forecasting, deep learning,
+        and structured prediction.
+      </p>
+    </section>
+
+    <section class="research-project">
+      <div class="research-meta">
+        <p class="section-label">CURRENT PROJECT</p>
+        <p>2026 · Work in progress</p>
+      </div>
+      <div class="research-content">
+        <h2>Dish Forecasting with Set-Based Neural Networks</h2>
+        <p class="project-summary">
+          Predicting the demand for one dish requires understanding the other
+          dishes offered at the same time. The menu is therefore naturally
+          modeled as a set rather than a fixed vector or an independent time series.
+        </p>
+
+        <div class="research-details">
+          <div>
+            <h3>Problem</h3>
+            <p>
+              Estimate dish-level choice rates for changing menus across
+              multiple restaurant sites and dates.
+            </p>
+          </div>
+          <div>
+            <h3>Approach</h3>
+            <p>
+              Compare simple baselines with permutation-invariant architectures,
+              including DeepSets and attention-based set encoders.
+            </p>
+          </div>
+          <div>
+            <h3>Evaluation</h3>
+            <p>
+              Analyze MAE, RMSE, WAPE, and calibration at dish, menu, date, and
+              restaurant levels.
+            </p>
+          </div>
+        </div>
+
+        <div class="tag-row">
+          <span>DeepSets</span>
+          <span>PyTorch</span>
+          <span>Forecasting</span>
+          <span>Structured Data</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/YOUR_USERNAME/YOUR_REPOSITORY" target="_blank" rel="noreferrer">
+            Code repository ↗
+          </a>
+          <a href="#" aria-disabled="true">Paper draft — coming soon</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards-section">
+      <div class="section-heading">
+        <p class="section-label">RESEARCH DIRECTIONS</p>
+        <h2>Questions I want to explore</h2>
+      </div>
+      <div class="cards two-columns">
+        <article class="card">
+          <span class="card-index">01</span>
+          <h3>Learning over sets</h3>
+          <p>
+            How should neural networks represent interactions between elements
+            when order is irrelevant but context matters?
+          </p>
+        </article>
+        <article class="card">
+          <span class="card-index">02</span>
+          <h3>Sequential decision-making</h3>
+          <p>
+            How can reinforcement learning improve reasoning, adaptation, and
+            post-training in large models?
+          </p>
+        </article>
+        <article class="card">
+          <span class="card-index">03</span>
+          <h3>Robust forecasting</h3>
+          <p>
+            How can models remain useful under sparse observations, changing
+            menus, and noisy operational data?
+          </p>
+        </article>
+        <article class="card">
+          <span class="card-index">04</span>
+          <h3>Evaluation in the real world</h3>
+          <p>
+            Which metrics best connect predictive performance to concrete
+            operational decisions?
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="publication-section">
+      <p class="section-label">PUBLICATIONS & WRITING</p>
+      <div class="empty-state">
+        <h2>Work in progress.</h2>
+        <p>
+          Research notes, paper drafts, and future publications will appear here.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Maxime Delpech</p>
+    <p>Built for GitHub Pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
